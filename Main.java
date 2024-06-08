@@ -6,17 +6,18 @@ import java.util.Scanner;
 import matematica.mate;
 import calculadoraEdad.calculadoraDeEdad;
 import lista.listaDeCompras;
+import conversor.conversor;
 public class Main {
     //metodo main
     public static void main(String[] args) {
        String[] listaDeOpciones = {
                 "Calculadora", "IMC",
-                "Farenheit / Celsius", "Calcular edad",
-                "Grados", "lista",
+                "Celsius / faherenit", "Calcular edad",
+                "convertor", "lista",
                 "Opción_7", "Opción_8",
                 "Opción_9", "Salir" };
 
-
+                 Banner.mensaje();
 
           opciones.cargaropciones(listaDeOpciones);
         Scanner opcion = new Scanner(System.in);
@@ -29,12 +30,19 @@ public class Main {
 
                           case 1:
                               int opcion2;
+                              System.out.println("+------------------+------------------+");
+                              System.out.println("| 1. suma          | 2. resta      |");
+                              System.out.println("| 3. divicion      | 4.multipli      |");
+                              System.out.println("+------------------+------------------+");
 
                               mate.programa();
                               break;
-                          case 3:
+                          case 2:
                               int opcion3;
-                              termometro.gradosxd();
+                              imc_.terminal();
+                          case 3:
+                              int opcion5;
+                              termometro.proigrama();
                               break;
 
                           case 4:
@@ -44,7 +52,8 @@ public class Main {
                               break;
 
                           case 5:
-                              int opcion5;
+                             conversor.mostrarMenuPrincipal();
+
                              break;
                           case 6:
                               int opcion6;

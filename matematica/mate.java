@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class mate {
     public static  void mate() {
-        String[] Opciones = {
-                "suma", "resta", "multiplicacion", "divicion"};
-        opciones.cargaropciones(Opciones);
+
+
         // Funciones para operaciones matemáticas
     }    public static double sumar(double a, double b) {
         return a + b;
@@ -46,6 +45,7 @@ public class mate {
 
             switch (opcion) {
                 case 1:
+
                     resultado = sumar(num1, num2);
                     break;
                 case 2:
