@@ -2,7 +2,7 @@ package lista;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import opciones.opciones;
+import misMetodos.opciones;
 
 public class listaDeCompras {
 

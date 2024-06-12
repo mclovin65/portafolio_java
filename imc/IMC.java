@@ -1,6 +1,6 @@
-package misMetodos;
+package imc;
 import java.util.Scanner;
-public class imc_{
+public class IMC {
 
         public static void terminal(){
             Scanner sc = new Scanner(System.in);

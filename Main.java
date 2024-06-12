@@ -1,12 +1,13 @@
-import termometro.termometro;
-import fogel.Banner;
-import misMetodos.imc_;
-import opciones.opciones;
+import conversor.termometro;
+import interfaz_grafica.Banner;
+import imc.IMC;
+import misMetodos.opciones;
 import java.util.Scanner;
-import matematica.mate;
-import calculadoraEdad.calculadoraDeEdad;
+import calculadora.mate;
+import calculadora.calculadoraDeEdad;
 import lista.listaDeCompras;
 import conversor.conversor;
+import conversor.monedas;
 public class Main {
     //metodo main
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class Main {
                 "Calculadora", "IMC",
                 "Celsius / faherenit", "Calcular edad",
                 "convertor", "lista",
-                "Opción_7", "Opción_8",
+                "conversor monedas", "Opción_8",
                 "Opción_9", "Salir" };
 
                  Banner.mensaje();
@@ -22,6 +23,7 @@ public class Main {
           opciones.cargaropciones(listaDeOpciones);
         Scanner opcion = new Scanner(System.in);
         System.out.print("[%d]");
+
         int opcions = opcion.nextInt();
                   boolean programma=true;
 
@@ -39,7 +41,7 @@ public class Main {
                               break;
                           case 2:
                               int opcion3;
-                              imc_.terminal();
+                              IMC.terminal();
                           case 3:
                               int opcion5;
                               termometro.proigrama();
@@ -61,6 +63,8 @@ public class Main {
 
                               );
                               break;
+                          case 7:
+                            monedas.conversor();
 
                           case 10:
                               programma = false;
@@ -70,9 +74,3 @@ public class Main {
 
     }
     }
-
-
-
-
-
-

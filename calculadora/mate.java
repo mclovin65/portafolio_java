@@ -1,5 +1,4 @@
-package matematica;
-import opciones.opciones;
+package calculadora;
 import java.util.Scanner;
 
 public class mate {

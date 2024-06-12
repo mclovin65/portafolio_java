@@ -1,4 +1,4 @@
-package calculadoraEdad;
+package calculadora;
 
 import java.util.Scanner;
 import java.time.LocalDate;

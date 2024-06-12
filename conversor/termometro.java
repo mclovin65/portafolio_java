@@ -1,4 +1,4 @@
-package termometro;
+package conversor;
 
 import java.util.Scanner;
 public class termometro {

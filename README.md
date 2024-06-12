@@ -16,16 +16,16 @@
 - **archivo**`termometro.java`
 -  **descripcion:** un programa que permite cambiar grados celsius a fahereint
 
-### fogel
-- **archivo**`fogel.java`
+### interfaz_grafica
+- **archivo**`interfaz_grafica.java`
 -  **descripcion:** un programa que permite mostrar una interfaz grafica
 
 ### lista
 - **archivo**`lista.java`
 - **descripcion:** un programa que permite crear una lista en blanco donde se puede agregar el nombre y precio del articulo
 
-### matematica
-- **archivo**`matematica.java`
+### calculadora
+- **archivo**`calculadora.java`
 - **Descripciòn** un programa que permite hacer varias opreaciones matematicas como sumar,restar,multiplicar,dividir
 
 ### opciones 

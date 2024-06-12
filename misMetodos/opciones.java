@@ -1,4 +1,4 @@
-package opciones;
+package misMetodos;
 
 public class opciones {
 //Carga y muestra las opciones en grupos de dos, cada grupo en una línea separada. public static void cargarOpciones(String[] opciones) {
