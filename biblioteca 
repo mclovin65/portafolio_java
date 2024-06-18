@@ -20,3 +20,31 @@ public class Biblioteca {
         System.out.println(libro2.getFecha());
     }
 }
+package libros;
+
+public class libro {
+    private String titulo;
+    private String autor;
+    private String fecha;
+
+    //metodo Constructor
+
+    public libro(String titulo, String autor, String fecha){
+        this.titulo = titulo;
+        this.autor = autor;
+        this.fecha = fecha;
+
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+}
