@@ -8,40 +8,41 @@ import calculadora.calculadoraDeEdad;
 import lista.listaDeCompras;
 import conversor.conversor;
 import conversor.monedas;
+import misMetodos.metodos;
 public class Main {
     //metodo main
     public static void main(String[] args) {
-       String[] listaDeOpciones = {
+        String[] listaDeOpciones = {
                 "Calculadora", "IMC",
                 "Celsius / faherenit", "Calcular edad",
                 "convertor", "lista",
                 "conversor monedas", "Opción_8",
-                "Opción_9", "Salir" };
-
-                 Banner.mensaje();
-
-          opciones.cargaropciones(listaDeOpciones);
-        Scanner opcion = new Scanner(System.in);
-        System.out.print("[%d]");
-
-        int opcions = opcion.nextInt();
+                "Opción_9", "Salir"};
                   boolean programma=true;
-
                   do {
+
+                      metodos.limpiarconsola();
+                      Banner.mensaje();
+                      metodos.imprimirlinea();
+                      opciones.cargaropciones(listaDeOpciones);
+                      Scanner opcion = new Scanner(System.in);
+                      System.out.print("[%d]");
+                      int opcions = opcion.nextInt();
                       switch (opcions) {
 
                           case 1:
                               int opcion2;
-                              System.out.println("+------------------+------------------+");
+                             metodos.imprimirlinea();
                               System.out.println("| 1. suma          | 2. resta      |");
                               System.out.println("| 3. divicion      | 4.multipli      |");
-                              System.out.println("+------------------+------------------+");
+                             metodos.imprimirlinea();
 
                               mate.programa();
                               break;
                           case 2:
                               int opcion3;
                               IMC.terminal();
+
                           case 3:
                               int opcion5;
                               termometro.proigrama();
