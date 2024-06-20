@@ -65,6 +65,9 @@ public class Main {
                               break;
                           case 7:
                             monedas.conversor();
+case 9:
+                              escuela.programa();
+                              break;
 
                           case 10:
                               programma = false;
