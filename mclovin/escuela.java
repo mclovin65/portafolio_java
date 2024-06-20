@@ -1,7 +1,7 @@
 package mclovin;
 
 public class escuela {
-    public static void main(String[] args){
+   public static void programa(){
 
         estudiantes estudiante1 = new estudiantes("Pepe", "pepe@gmail.com", 8, true);
         estudiantes estudiante2 = new estudiantes("Juan", "juan@gmail.com", 8, true);
