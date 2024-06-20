@@ -9,6 +9,10 @@ import lista.listaDeCompras;
 import conversor.conversor;
 import conversor.monedas;
 import misMetodos.metodos;
+import biblioteca.libro;
+import mclovin.estudiantes;
+import mclovin.cursos;
+import mclovin.escuela;
 public class Main {
     //metodo main
     public static void main(String[] args) {
@@ -17,7 +21,7 @@ public class Main {
                 "Celsius / faherenit", "Calcular edad",
                 "convertor", "lista",
                 "conversor monedas", "Opción_8",
-                "Opción_9", "Salir"};
+                "escuela", "Salir"};
                   boolean programma=true;
                   do {
 
@@ -66,7 +70,9 @@ public class Main {
                               break;
                           case 7:
                             monedas.conversor();
-
+                          case 9:
+                              escuela.programa();
+                              break;
                           case 10:
                               programma = false;
                               break;
