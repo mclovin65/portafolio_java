@@ -2,6 +2,8 @@ import conversor.termometro;
 import interfaz_grafica.Banner;
 import imc.IMC;
 import misMetodos.opciones;
+
+import java.awt.*;
 import java.util.Scanner;
 import calculadora.mate;
 import calculadora.calculadoraDeEdad;
@@ -13,6 +15,7 @@ import biblioteca.libro;
 import mclovin.estudiantes;
 import mclovin.cursos;
 import mclovin.escuela;
+import javax.swing.*;
 public class Main {
     //metodo main
     public static void main(String[] args) {
@@ -22,7 +25,57 @@ public class Main {
                 "convertor", "lista",
                 "conversor monedas", "Opción_8",
                 "escuela", "Salir"};
-                  boolean programma=true;
+        JFrame miVentana = new JFrame();
+        miVentana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        miVentana.setSize(600, 600);
+        miVentana.setLayout(null);
+        JPanel bannerr = new JPanel();
+        String texto = "░▄▀▄▀▀▀▀▄▀▄░░░░░░░░░\n" +
+                "░█░░░░░░░░▀▄░░░░░░▄░\n" +
+                "█░░▀░░▀░░░░░▀▄▄░░█░█\n" +
+                "█░▄░█▀░▄░░░░░░░▀▀░░█\n" +
+                "█░░▀▀▀▀░░░░░░░░░░░░█\n" +
+                "█░░░░░░░░░░░░░░░░░░█\n" +
+                "█░░░░░░░░░░░░░░░░░░█\n" +
+                "░█░░▄▄░░▄▄▄▄░░▄▄░░█░\n" +
+                "░█░▄▀█░▄▀░░█░▄▀█░▄▀░\n" +
+                "░░▀░░░▀░░░░░▀░░░▀░░░";
+        JLabel label = new JLabel("<html>" + texto.replace("\n", "<br>") + "</html>");
+        label.setFont(new Font("Monospaced", Font.PLAIN, 18));
+        label.setBounds(10, 10, 580, 200);
+        bannerr.add(label);
+        bannerr.setBounds(10, 10, 580, 200);
+        bannerr.setLayout(null);
+
+
+        JPanel panelTexto = new JPanel();
+        panelTexto.setLayout(null);
+        for (int i = 1; i <= 6; i++) {
+            JLabel textoPanel = new JLabel("opcion " + i, JLabel.CENTER);
+            textoPanel.setBounds(100 * ((i - 1) % 2), 30 * ((i - 1) / 2), 100, 30); // Ubicación y tamaño de las etiquetas de texto
+            panelTexto.add(textoPanel);
+        }
+        panelTexto.setBounds(10, 220, 580, 180);
+
+
+        JPanel panelInferior = new JPanel();
+        JLabel textoInferior = new JLabel("boton");
+        textoInferior.setBounds(0, 0, 200, 30);
+        panelInferior.add(textoInferior);
+        panelInferior.setBounds(10, 420, 580, 30);
+        panelInferior.setLayout(null);
+
+
+        miVentana.add(bannerr);
+        miVentana.add(panelTexto);
+        miVentana.add(panelInferior);
+
+        
+        miVentana.setVisible(true);
+
+
+
+           boolean programma=true;
                   do {
 
                       metodos.limpiarconsola();
