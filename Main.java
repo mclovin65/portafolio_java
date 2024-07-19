@@ -70,7 +70,7 @@ public class Main {
         miVentana.add(panelTexto);
         miVentana.add(panelInferior);
 
-        
+
         miVentana.setVisible(true);
 
 
